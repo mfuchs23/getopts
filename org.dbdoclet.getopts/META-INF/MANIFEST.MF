@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: org.dbdoclet.getopts
+Bundle-SymbolicName: org.dbdoclet.getopts
+Bundle-Version: 6.1.0
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Import-Package: org.dbdoclet.service
+Export-Package: org.dbdoclet.option
