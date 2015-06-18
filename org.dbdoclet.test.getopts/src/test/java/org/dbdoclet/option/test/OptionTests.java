@@ -95,6 +95,7 @@ public class OptionTests {
         
     }
 
+	@Test
     public void testOptions3() {
 
         String[] args = { "-tag", "a", 
@@ -128,6 +129,16 @@ public class OptionTests {
 
         } // end of try-catch
         
+    }
+    
+    @Test
+    public void twoDimensionalArgs() {
+
+        String[][] args = {{"-a", "a" },  
+        		{"-b", "b" }, 
+        		{"-c", "c" }};
+
+        OptionList options = new OptionList(args);
     }
 
     private static void println(String msg) {

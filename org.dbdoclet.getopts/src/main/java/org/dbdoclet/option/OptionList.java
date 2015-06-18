@@ -25,8 +25,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Properties;
 import java.util.ResourceBundle;
+import java.util.stream.Collectors;
 
 import org.dbdoclet.service.ResourceServices;
 
@@ -89,20 +91,9 @@ public class OptionList implements Iterable<Option<?>> {
 	 */
 	public OptionList(String[][] cmdline) {
 
-		ArrayList<String> list = new ArrayList<>();
-
-		for (int i = 0; i < cmdline.length; i++) {
-			for (int j = 0; j < cmdline[i].length; j++) {
-				list.add(cmdline[i][j]);
-			}
-		}
-
-		String[] args = new String[list.size()];
-
-		int index = 0;
-		for (Iterator<String> i = list.iterator(); i.hasNext();) {
-			args[index++] = i.next();
-		}
+		String[] args = Arrays.stream(cmdline)
+				.flatMap(arr -> Arrays.stream(arr))
+				.toArray(String[]::new);
 
 		init(args, 0);
 	}
@@ -164,7 +155,7 @@ public class OptionList implements Iterable<Option<?>> {
 			error = "";
 		}
 
-		return String.join(" ",  args) + "\n\n" + error;
+		return String.join(" ", args) + "\n\n" + error;
 	}
 
 	/**
@@ -511,8 +502,8 @@ public class OptionList implements Iterable<Option<?>> {
 
 				if (option == null) {
 
-					buffer += MessageFormat.format(ResourceServices
-							.getString(res, "C_ERROR_PROPERTY_UNKNOWN"), name)
+					buffer += MessageFormat.format(ResourceServices.getString(
+							res, "C_ERROR_PROPERTY_UNKNOWN"), name)
 							+ "\n";
 					continue;
 				}
@@ -588,10 +579,8 @@ public class OptionList implements Iterable<Option<?>> {
 			index = searchArgs(argList, option);
 
 			if (index == -1 && option.isRequired()) {
-				buffer += MessageFormat
-						.format(ResourceServices.getString(res,
-								"C_ERROR_OPTION_REQUIRED"), option
-								.getUniqueName())
+				buffer += MessageFormat.format(ResourceServices.getString(res,
+						"C_ERROR_OPTION_REQUIRED"), option.getUniqueName())
 						+ "\n";
 				continue;
 			}
@@ -767,9 +756,8 @@ public class OptionList implements Iterable<Option<?>> {
 
 				if (option.isUnique() && index != -1 && counter == 0) {
 
-					buffer += MessageFormat.format(ResourceServices
-							.getString(res,
-									"C_ERROR_OPTION_WAS_FOUND_MORE_THAN_ONCE"),
+					buffer += MessageFormat.format(ResourceServices.getString(
+							res, "C_ERROR_OPTION_WAS_FOUND_MORE_THAN_ONCE"),
 							option.getUniqueName())
 							+ "\n";
 				}
@@ -1037,15 +1025,15 @@ public class OptionList implements Iterable<Option<?>> {
 	public Option<String> getTextOption(String name) {
 
 		Option<?> option = getOption(name);
-		
+
 		if (option instanceof SelectOption) {
 			return (SelectOption) option;
 		}
-		
+
 		if (option instanceof StringOption) {
 			return (StringOption) option;
 		}
-		
+
 		return null;
 	}
 
