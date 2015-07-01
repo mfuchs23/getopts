@@ -307,13 +307,7 @@ public class OptionList implements Iterable<Option<?>> {
 		}
 
 		optList.add(option);
-
-		String[] names = option.getNames();
-
-		for (int i = 0; i < names.length; i++) {
-			optMap.put(names[i], option);
-		}
-
+		Arrays.stream(option.getNames()).forEach(n -> optMap.put(n, option));
 	}
 
 	/**
@@ -329,13 +323,7 @@ public class OptionList implements Iterable<Option<?>> {
 			return new String[0];
 		}
 
-		String[] array = new String[remainingArgs.size()];
-
-		for (int i = 0; i < remainingArgs.size(); i++) {
-			array[i] = remainingArgs.get(i);
-		}
-
-		return array;
+		return remainingArgs.stream().toArray(String[]::new);
 	}
 
 	/**
@@ -451,6 +439,7 @@ public class OptionList implements Iterable<Option<?>> {
 
 		String buffer = "";
 
+		// props.forEach(Property p -> System.out.println());
 		for (Iterator<Object> i = props.keySet().iterator(); i.hasNext();) {
 
 			obj = i.next();
