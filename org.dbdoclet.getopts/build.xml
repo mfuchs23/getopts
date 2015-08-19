@@ -3,9 +3,6 @@
 ### Copyright (C) 2001-2015 Michael Fuchs ###
 -->
 <project name="org.dbdoclet.getopts" default="build">
-
-  <property file="../workspace.properties" />
-  <property file="module.properties" />
+  <property file="../module.properties" />
   <import file="${build.config.dir}/defaultBuild.xml"/>
-
 </project>
