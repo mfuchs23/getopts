@@ -32,6 +32,10 @@
     </sequential>
   </macrodef>
 
+  <target name="clean">
+    <iterate target="clean"/>
+  </target>
+
   <target name="build">
     <iterate target="build"/>
   </target>
