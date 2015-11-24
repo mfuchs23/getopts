@@ -138,7 +138,7 @@ public class OptionTests {
         		{"-b", "b" }, 
         		{"-c", "c" }};
 
-        OptionList options = new OptionList(args);
+        new OptionList(args);
     }
 
     private static void println(String msg) {
