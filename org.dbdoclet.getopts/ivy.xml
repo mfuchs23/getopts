@@ -3,6 +3,6 @@
   <info organisation="org.dbdoclet" module="org.dbdoclet.getopts" revision="${module.version}" status="integration" publication="20130808120849">
   </info>
   <dependencies>
-    <dependency org="org.dbdoclet" name="org.dbdoclet.commons" rev="8.0.4" revConstraint="latest.integration"/>
+    <dependency org="org.dbdoclet" name="org.dbdoclet.commons" rev="8.0.4" revConstraint="latest.release"/>
   </dependencies>
 </ivy-module>
