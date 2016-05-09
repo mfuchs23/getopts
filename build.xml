@@ -12,8 +12,8 @@
     <sequential>
       <subant target="@{target}"> 
 	<fileset dir=".">
-	  <exclude name="org.dbdoclet.test.*/build.xml"/>
 	  <include name="*/build.xml"/>
+	  <exclude name="org.dbdoclet.test.*/build.xml"/>
 	</fileset>
       </subant>
     </sequential>
@@ -32,6 +32,11 @@
 
   <target name="test">
     <iterate-test target="test"/>
+  </target>
+
+  <target name="rebuild">
+    <iterate target="distclean"/>
+    <iterate target="build"/>
   </target>
 
 </project>
