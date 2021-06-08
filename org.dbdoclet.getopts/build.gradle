@@ -1,0 +1,35 @@
+
+plugins {
+    id 'java-library'
+	id 'biz.aQute.bnd.builder'
+	id 'ivy-publish'
+}
+
+group = 'org.dbdoclet'
+version = '9.0'
+sourceCompatibility = JavaVersion.VERSION_11
+targetCompatibility = JavaVersion.VERSION_11
+
+publishing {
+ 	publications {
+    	ivy(IvyPublication) {
+	    	from components.java
+     	}
+	}
+}
+
+dependencies {
+
+	compileOnly group: 'commons-logging', name: 'commons-logging', version: '1.2'
+	compileOnly group: 'org.dbdoclet', name: 'org.dbdoclet.commons', version: '9+'
+
+	testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3.1'
+	testRuntimeOnly group: 'commons-logging', name: 'commons-logging', version: '1.2'
+	testRuntimeOnly group: 'org.dbdoclet', name: 'org.dbdoclet.commons', version: '9+'
+}  
+
+test {
+    useJUnitPlatform()
+}
+

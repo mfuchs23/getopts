@@ -1,6 +1,6 @@
 package org.dbdoclet.option.test;
 
-import static org.junit.Assert.fail;
+import static org.junit.jupiter.api.Assertions.fail;
 
 import java.util.Properties;
 
@@ -8,7 +8,7 @@ import org.dbdoclet.option.BooleanOption;
 import org.dbdoclet.option.FileOption;
 import org.dbdoclet.option.OptionList;
 import org.dbdoclet.option.StringOption;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 /**
  *  Unit Test for class OptionTests.java

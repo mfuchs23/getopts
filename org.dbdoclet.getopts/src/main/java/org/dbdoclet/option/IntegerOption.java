@@ -31,12 +31,12 @@ public class IntegerOption extends Option<Integer> {
 
 	@Override
      public void setValueFromString(String value) {
-        setValue(new Integer(value));
+        setValue(Integer.valueOf(value));
     }
 
 	@Override
 	public void addValueFromString(String value) {
-        addValue(new Integer(value));
+        addValue(Integer.valueOf(value));
 	}
 
 	@Override
