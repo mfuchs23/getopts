@@ -1,23 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-### Copyright (C) 2001-2015 Michael Fuchs ###
--->
-<project name="common" default="build">
+<project name="getopts" default="rebuild">
               
   <property file="module.properties" />
   <import file="../build/build.config/defaultBuild.xml"/>  
-
-  <macrodef name="iterate">
-    <attribute name="target"/>
-    <sequential>
-      <subant target="@{target}"> 
-	<fileset dir=".">
-	  <include name="*/build.xml"/>
-	  <exclude name="org.dbdoclet.test.*/build.xml"/>
-	</fileset>
-      </subant>
-    </sequential>
-  </macrodef>
 
   <macrodef name="iterate-test">
     <attribute name="target"/>
@@ -31,7 +16,7 @@
   </macrodef>
 
   <target name="test">
-    <iterate-test target="test"/>
+    <iterate target="test"/>
   </target>
 
   <target name="rebuild">

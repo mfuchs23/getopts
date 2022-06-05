@@ -1,14 +1,12 @@
-package org.dbdoclet.option.test;
+package org.dbdoclet.option;
 
-import static org.junit.Assert.fail;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.fail;
 
 import java.util.Properties;
 
-import org.dbdoclet.option.BooleanOption;
-import org.dbdoclet.option.FileOption;
-import org.dbdoclet.option.OptionList;
-import org.dbdoclet.option.StringOption;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 /**
  *  Unit Test for class OptionTests.java
@@ -48,19 +46,13 @@ public class OptionTests {
             
             if (options.validate() == false) {
                 fail(options.getError());
-            } // end of else
+            } 
 
             options.setProperties(properties);
-
-            println("Optionen:");
-            println(options.list());
             
-        } catch (Exception oops) {
-        
+        } catch (Exception oops) {        
             oops.printStackTrace();
-
-        } // end of try-catch
-        
+        } 
     }
 
 	@Test
@@ -77,21 +69,11 @@ public class OptionTests {
             opt.setPropertyName("help");
             options.add(opt);
             
-            if (options.validate()) {
-                fail("Die Validierung muss fehlschlagen, da die Option --help mehrmals verwendet wurde.");
-            } else {
-                println("Die Validierung der Optionen war nicht erfolgreich:");
-                println(options.getError());
-            } // end of else
+            assertFalse(options.validate(), "Die Validierung ist nicht fehlgeschlagen!");
 
-            println("Optionen:");
-            println(options.list());
-            
-        } catch (Exception oops) {
-        
+        } catch (Exception oops) {        
             fail(oops.getMessage());
-
-        } // end of try-catch
+        }
         
     }
 
@@ -112,22 +94,14 @@ public class OptionTests {
             opt.setMediumName("tag");
             opt.setPropertyName("javadoc.tag");
             options.add(opt);
-            
-            if (options.validate()) {
-                println("Die Validierung der Optionen war erfolgreich.");
-            } else {
-                println("Die Validierung der Optionen war nicht erfolgreich:");
-                println(options.getError());
-            } // end of else
-
-            println("Optionen:");
-            println(options.list());
+         
+            assertTrue(options.validate(), options.getError());
             
         } catch (Exception oops) {
         
             fail(oops.getMessage());
 
-        } // end of try-catch
+        }
         
     }
     
@@ -141,8 +115,4 @@ public class OptionTests {
         new OptionList(args);
     }
 
-    private static void println(String msg) {
-        System.out.println(msg);
-    }
-    
-} // OptionTest
+}

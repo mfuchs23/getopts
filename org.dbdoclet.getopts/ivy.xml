@@ -3,6 +3,10 @@
   <info organisation="org.dbdoclet" module="org.dbdoclet.getopts" revision="${module.version}" status="integration" publication="20130808120849">
   </info>
   <dependencies>
-    <dependency org="org.dbdoclet" name="org.dbdoclet.commons" rev="8.0.4" revConstraint="latest.release"/>
+    <dependency org="org.junit.jupiter" name="junit-jupiter-api" rev="5.8.2"/>
+    <dependency org="org.junit.platform" name="junit-platform-launcher" rev="1.8.2"/>
+    <dependency org="org.junit.vintage" name="junit-vintage-engine" rev="5.8.2"/>
+	<dependency org="org.junit.jupiter" name="junit-jupiter-engine" rev="5.8.2"/>
+    <dependency org="org.dbdoclet" name="org.dbdoclet.commons" rev="9.0.1-SNAPSHOT" revConstraint="latest.integration"/>
   </dependencies>
 </ivy-module>
