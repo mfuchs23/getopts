@@ -1,0 +1,6 @@
+version=9.0.1-SNAPSHOT
+Bundle-Name=org.dbdoclet.getopts
+Bundle-SymbolicName=org.dbdoclet.getopts
+Bundle-Version=${version}
+Export-Package: org.dbdoclet.option.*;version=${version}
+Import-Package: org.dbdoclet.service.*

@@ -1,0 +1,167 @@
+[33mcommit bb0c80100a390ce4daa4ceb62bd4d148ceaaf9a1[m[33m ([m[1;36mHEAD -> [m[1;32mdevelop[m[33m)[m
+Author: Michael Fuchs <michael.fuchs@dbdoclet.org>
+Date:   Sun Apr 2 12:13:20 2023 +0200
+
+    x xx
+
+[33mcommit e865451998d79088e51951b578efec861e08ddcb[m
+Author: Michael Fuchs <michael.fuchs@dbdoclet.org>
+Date:   Sun Jun 5 14:50:50 2022 +0200
+
+    Migration to JDK 9 and JUnit 5
+
+[33mcommit 3788b4709a1b0a20eca3bc605cae6c3b255e75f9[m
+Author: Michael Fuchs <michael.fuchs@dbdoclet.org>
+Date:   Mon May 9 15:23:56 2016 +0200
+
+    Incremented patch number.
+
+[33mcommit 8219c5973f23b3540fe34a3b57d69c989e6045a7[m
+Author: Michael Fuchs <michael.fuchs@dbdoclet.org>
+Date:   Mon May 9 15:23:46 2016 +0200
+
+    SCM Korrekturen
+
+[33mcommit f154a80a8e5bb6e1007b35c0a7ad2ef00fa42c16[m[33m ([m[1;32mrelease-8.1[m[33m)[m
+Author: Michael Fuchs <michael.fuchs@dbdoclet.org>
+Date:   Mon May 9 15:21:22 2016 +0200
+
+    Refactoring of package structure.
+
+[33mcommit d6899a0cd054d948a40dbb2910aafc595cd544bc[m
+Author: Michael Fuchs <michael.fuchs@dbdoclet.org>
+Date:   Thu Jan 21 08:27:53 2016 +0100
+
+    New build target 'rebuild'.
+
+[33mcommit 98c9d694b7260c18bd6ece3905638b9325172d8e[m
+Author: Michael Fuchs <michael.fuchs@dbdoclet.org>
+Date:   Tue Nov 24 16:15:28 2015 +0100
+
+    Release 8.1.0-SNAPSHOT
+
+[33mcommit 6bbe785d92999895f83485077708785b0ddc6ede[m
+Author: Michael Fuchs <michael.fuchs@dbdoclet.org>
+Date:   Tue Nov 24 16:14:49 2015 +0100
+
+    Cleanup
+
+[33mcommit 38bdc589629860c480fdc9880db04f91120a7ff8[m
+Author: Michael Fuchs <michael.fuchs@dbdoclet.org>
+Date:   Tue Nov 24 16:07:34 2015 +0100
+
+    Cleanup build file.
+
+[33mcommit fb33122b6b564925cff6fb117ecf3acc2cad7a81[m
+Author: Michael Fuchs <michael.fuchs@dbdoclet.org>
+Date:   Wed Aug 19 13:28:42 2015 +0200
+
+    Release 8.0.2-SNAPSHOT
+
+[33mcommit 67902592bcd94165bef8533d0414b8d1af5528d4[m
+Author: Michael Fuchs <michael.fuchs@dbdoclet.org>
+Date:   Wed Aug 19 13:28:40 2015 +0200
+
+    Release 8.0.1
+
+[33mcommit 9a8faf16314949e0a59b4e845450618e85e111c5[m
+Author: Michael Fuchs <michael.fuchs@dbdoclet.org>
+Date:   Wed Aug 19 13:27:16 2015 +0200
+
+    New release management.
+
+[33mcommit d3659948e9779effbb2c42522acb837453d12646[m
+Author: Michael Fuchs <michael.fuchs@dbdoclet.org>
+Date:   Wed Aug 19 13:21:25 2015 +0200
+
+    New release management.
+
+[33mcommit cda602019e0fbf9b398326c3cf562a8a8d885c24[m
+Author: Michael Fuchs <michael.fuchs@dbdoclet.org>
+Date:   Wed Aug 19 12:15:49 2015 +0200
+
+    Release 8.0.2-SNAPSHOT
+
+[33mcommit 83fc2839819dedaa5a7cb1f1b1a5f4f20b874b90[m[33m ([m[1;33mtag: 8.0.1[m[33m)[m
+Author: Michael Fuchs <michael.fuchs@dbdoclet.org>
+Date:   Wed Aug 19 12:15:47 2015 +0200
+
+    Release 8.0.1
+
+[33mcommit ce363b9f8b4ca98c423c909f72218ea0198e61f9[m
+Author: Michael Fuchs <michael.fuchs@dbdoclet.org>
+Date:   Wed Aug 19 12:14:40 2015 +0200
+
+    Release 8.0.1-SNAPSHOT
+
+[33mcommit c8a118265cff2c4165e675b5e7d75e849d1ee484[m[33m ([m[1;33mtag: 8.0.0[m[33m)[m
+Author: Michael Fuchs <michael.fuchs@dbdoclet.org>
+Date:   Wed Aug 19 12:14:39 2015 +0200
+
+    Release 8.0.0
+
+[33mcommit 71ef82fbce1887183a95d022946d9e0701dd515b[m
+Author: Michael Fuchs <michael.fuchs@dbdoclet.org>
+Date:   Wed Aug 19 12:14:23 2015 +0200
+
+    New patch ant targets.
+
+[33mcommit 71aa645bd7fbf66314ef9622859e80ad290d298c[m
+Author: Michael Fuchs <michael.fuchs@dbdoclet.org>
+Date:   Wed Aug 19 12:11:32 2015 +0200
+
+    New patch ant targets.
+
+[33mcommit d10f30f3b08871cc94271dbbfaa36ab8aa412cf3[m
+Author: Michael Fuchs <michael.fuchs@dbdoclet.org>
+Date:   Wed Aug 19 08:45:26 2015 +0200
+
+    Code cleanup
+
+[33mcommit f9bfe9ed065b50399098f0985c5a26e523e77ecf[m
+Author: Michael Fuchs <michael.fuchs@dbdoclet.org>
+Date:   Wed Jul 1 20:25:36 2015 +0200
+
+    Fixes
+
+[33mcommit 4c9dad1c26b015b5a333fdb97d5cbaa67c7eeb84[m
+Author: Michael Fuchs <michael.fuchs@dbdoclet.org>
+Date:   Thu Jun 18 09:28:32 2015 +0200
+
+    Migration to lambda expressions.
+
+[33mcommit de1fed51af532e91a68b19f433dc4e0508d92cb5[m
+Author: Michael Fuchs <michael.fuchs@dbdoclet.org>
+Date:   Tue Jun 16 07:52:12 2015 +0200
+
+    Tests integriert.
+
+[33mcommit d6d33dfae706061e96ad28992a06d742491c4a0b[m
+Author: Michael Fuchs <michael.fuchs@dbdoclet.org>
+Date:   Tue Jun 16 07:16:04 2015 +0200
+
+    Tests eingecheckt.
+
+[33mcommit 8bff9c569e8dd30f5e7f59a77a7d511f100e46af[m[33m ([m[1;31morigin/develop[m[33m)[m
+Author: Michael Fuchs <michael.fuchs@dbdoclet.org>
+Date:   Mon Jun 15 18:38:36 2015 +0200
+
+    Snapshot Version für 8.0.1 eingerichtet.
+
+[33mcommit 6fb239be625044c890126ac79ca5862a6cd4b2dd[m
+Author: Michael Fuchs <michael.fuchs@dbdoclet.org>
+Date:   Mon Jun 15 18:30:55 2015 +0200
+
+    Workspace issues
+
+[33mcommit 5c0e4ef5fefd82b8d0796c19f52d13da0a33b722[m
+Author: Michael Fuchs <michael.fuchs@dbdoclet.org>
+Date:   Mon Jun 15 18:29:37 2015 +0200
+
+    Workspace issues
+
+[33mcommit 777cf0eb919bcf4562baa47d67279a8ce8531282[m[33m ([m[1;33mtag: v8.0.0[m[33m)[m
+Author: Michael Fuchs <michael.fuchs@dbdoclet.org>
+Date:   Mon Jun 15 18:23:26 2015 +0200
+
+    Initialer Commit
