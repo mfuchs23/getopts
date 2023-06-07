@@ -1,4 +1,4 @@
-version=9.0.1-SNAPSHOT
+version=11.0.1
 Bundle-Name=org.dbdoclet.getopts
 Bundle-SymbolicName=org.dbdoclet.getopts
 Bundle-Version=${version}
